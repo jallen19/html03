@@ -6,8 +6,8 @@
    Case Problem 3
    
    Layout Style Sheet for A Soldier's Scrapbook
-   Author: 
-   Date:   
+   Author: James Allen & Dylan Brune
+   Date: Oct. 15, 2018
    
    Filename: ss_layout.css
 
@@ -15,6 +15,11 @@
 
 
 /* Article Styles */
+article {
+    float: left;
+    width: 384px;
+}
+
 
 
 

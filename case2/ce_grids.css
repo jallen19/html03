@@ -20,9 +20,9 @@ div.row {
 }
 
 div.row::after {
+    clear: both;
     content: "";
     display: table;
-    clear: both;
 }
 
 
@@ -75,7 +75,7 @@ div.column80 {
 
 
 /* Grid Spacing Styles */
-div.container, div.rows, div.[class^='column'], div.cell, div.cell a {
+div.container, div.row, div.[class^='column'], div.cell, div.cell a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
