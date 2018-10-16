@@ -93,7 +93,7 @@ div#awardList {
     height: 650px;
 }
 
-div#awardList.awards {
+div.awards {
     position: absolute;
     width: 30%;
 }
