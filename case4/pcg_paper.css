@@ -51,7 +51,7 @@ nav ul {
 }
 
 nav.horizontalNavigation li {
-    width: 25%;
+    width: 12%;
     float: left;
     text-align: center;
     padding-bottom: 15px;
@@ -62,26 +62,29 @@ aside#rightColumn {
     float: right;
 }
 
-aside#rightColumn ul li {
-    margin-top: 0px;
-    line-height: 25px;
+aside#rightColumn li {
+    margin-top: 10px;
+    line-height: 12px;
 }
 
 
 aside#leftColumn {
     float: left;
-    margin-bottom: 20px;
+    margin-bottom: px;
+    padding-right: 10px;
 }
 
 aside#leftColumn h1 {
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding-right: 15px;
+    margin-top: 10px;
 }
 
-aside#leftColumn a {
-    text-align: left;
+aside#leftColumn li {
+    line-height: 22px;
 }
 
 section#marathonWin {
+    padding-left: 20px;
+    padding-right: 20px;
 }
