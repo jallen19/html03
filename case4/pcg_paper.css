@@ -1,4 +1,4 @@
-/@charset "utf-8";
+@charset "utf-8";
 
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
@@ -26,6 +26,10 @@ aside, body, em, footer, h1, header, html, img, li, main, nav, p, section, ul {
     box-sizing: border-box;
 }
 
+header, h1, nav, p, img, section, aside, footer {
+    display: block;
+}
+
 html {
     background-color: rgba(210, 180, 140, 0.6);
 }
@@ -37,6 +41,7 @@ body {
     max-width: 960px;
     min-width: 640px;
     width: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /*Header Styles*/
@@ -44,18 +49,15 @@ header {
     background-color: rgb(210, 180, 140);
 }
 
-header, nav, img, section, aside, footer {
-    display: block;
-}
-
 header img {
+    clear: both;
     height: auto;
     width: 100%;
 }
 
 /*Nav Styles */
 nav ul {
-    list-style: none;
+    list-style-type: none;
 }
 
 nav > ul > li > a:link, nav > ul > li > a:visited {
@@ -68,8 +70,8 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
 }
 
 nav.horizontalNavigation {
-    height: 20px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 nav.horizontalNavigation li {
@@ -77,9 +79,11 @@ nav.horizontalNavigation li {
     float: left;
     text-align: center;
 }
+
 /*Aside Styles */
 aside#rightColumn {
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
     float: right;
     height: 300px;
     outline: 4px solid rgb(210, 180, 140);
@@ -90,15 +94,17 @@ aside#rightColumn {
 aside#rightColumn li {
     margin-top: 10px;
     line-height: 15px;
+    text-align: right;
 }
 
 aside#leftColumn {
     float: left;
-    padding-right: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
     height: 300px;
     outline: 4px solid rgb(210, 180, 140);
     margin-left: 4px;
-    margin-right: 4px;
+    margin-right: 10px;
 }
 
 aside#leftColumn h1 {
@@ -110,11 +116,42 @@ aside#leftColumn h1 {
 aside#leftColumn li {
     line-height: 25px;
 }
+
+aside#encounterCougar h1 {
+    padding-left: 33px;
+}
+
+aside#encounterCougar ul{
+    padding-left: 40px;
+    list-style-type: decimal;
+    font-size: 1.1em;
+}
+
+
 /*Section Styles */
-section.bottomPage {
+section.bottomPage p {
+    line-height: 17px;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 1.05em;
 }
+
+section.bottomPage h1 {
+    line-height: 30px;
+    padding-left: 30px;
+    font-size: 1.5em;
+}
+
+section#marathonWin img {
+    float: right;
+    padding-right: 30px;
+}
+
+section#marathonWin p:first-of-type::first-line {
+    padding-top: 100px;
+}
+
+
 /*Footer Styles */
 footer {
     text-align: center;
