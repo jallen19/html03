@@ -50,6 +50,7 @@ header {
 }
 
 header img {
+    position: relative;
     clear: both;
     height: auto;
     width: 100%;
@@ -70,6 +71,7 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
 }
 
 nav.horizontalNavigation {
+    clear: both;
     padding-top: 10px;
     padding-bottom: 30px;
 }
@@ -130,7 +132,7 @@ aside#encounterCougar ul{
 
 /*Section Styles */
 section.bottomPage p {
-    line-height: 17px;
+    line-height: 19px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 1.05em;
@@ -144,6 +146,7 @@ section.bottomPage h1 {
 
 section#marathonWin img {
     float: right;
+    padding-left: 10px;
     padding-right: 30px;
 }
 
@@ -161,4 +164,10 @@ footer {
 footer a {
     color: black;
     text-decoration: none;
+}
+
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
 }
